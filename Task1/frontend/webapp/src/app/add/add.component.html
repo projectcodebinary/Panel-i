@@ -1,0 +1,139 @@
+ <section id="showcase">
+   <div class="container">
+     <form #myform=ngForm (ngSubmit)="submit(myform)" id="myform">
+       <div class="form-group">    
+                 <div class="col-sm-6">
+                   <input type="text" class="form-control" placeholder="Enter name" name="name" [(ngModel)]="udata.name">
+                 </div>
+               </div>                               
+               <div class="form-group" >
+                 
+                 <div class="col-sm-6">
+                   <input type="text" class="form-control"  placeholder="Enter Email " name="email" [(ngModel)]="udata.email">
+                 </div>
+               </div>
+               <div class="form-group" >
+                 
+                 <div class="col-sm-6">
+                   <input type="text" class="form-control"  placeholder="Enter Company name" name="company" [(ngModel)]="udata.company">
+                 </div>
+               </div>
+               <div class="form-group" >
+                 
+                 <div class="col-sm-6">
+                 <input type="text" class="form-control"  placeholder="Enter position" name="position" [(ngModel)]="udata.position">
+             </div>
+            </div>
+             <div class="form-group" >
+                 
+                 <div class="col-sm-6">
+                   <input type="number" class="form-control"  placeholder="Enter question 1 score" name="question1" [(ngModel)]="udata.q1">
+                 </div>
+               </div>
+               <div class="form-group" >
+                 
+                   <div class="col-sm-6">
+                     <input type="number" class="form-control"  placeholder="Enter question 2 score" name="question2" [(ngModel)]="udata.q2">
+                   </div>
+                 </div>
+               <div class="form-group" >
+                 
+                     <div class="col-sm-6">
+                       <input type="number" class="form-control"  placeholder="Enter question 3 score" name="question3" [(ngModel)]="udata.q3">
+                     </div>
+               </div>
+               <div class="form-group" >
+                 
+                   <div class="col-sm-6">
+                     <input type="number" class="form-control"  placeholder="Enter question 4 score" name="question4" [(ngModel)]="udata.q4">
+                   </div>
+               </div>
+               <div class="form-group" >
+                 
+                   <div class="col-sm-6">
+                     <input type="number" class="form-control"  placeholder="Enter question 5 score" name="question5" [(ngModel)]="udata.q5">
+                   </div>
+               </div>
+               <div class="form-group" >
+                 
+                  <div class="col-sm-6">
+                    <input type="number" class="form-control"  placeholder="Enter question 6 score" name="question6" [(ngModel)]="udata.q6">
+                  </div>
+               </div>
+               <div class="form-group" >
+                 
+                   <div class="col-sm-6">
+                     <input type="number" class="form-control"  placeholder="Enter question 7 score" name="question7" [(ngModel)]="udata.q7">
+                   </div>
+               </div>
+               <div class="form-group" >
+                 
+                 <div class="col-sm-6">
+                   <input type="number" class="form-control"  placeholder="Enter question 8 score" name="question8" [(ngModel)]="udata.q8">
+                 </div>
+               </div>
+               <div class="form-group" >
+                 
+                   <div class="col-sm-6">
+                     <input type="number" class="form-control"  placeholder="Enter question 9 score" name="question9" [(ngModel)]="udata.q9">
+                   </div>
+               </div>
+               <div class="form-group" >
+                 
+                   <div class="col-sm-6">
+                     <input type="number" class="form-control"  placeholder="Enter question 10 score" name="question10" [(ngModel)]="udata.q10">
+                   </div>
+               </div>
+               <div class="form-group" >
+                 
+                  <div class="col-sm-6">
+                    <input type="number" class="form-control"  placeholder="Enter question 11 score" name="question11" [(ngModel)]="udata.q11">
+                  </div>
+               </div>
+               
+               <div class="form-group" >
+                 
+                 <div class="col-sm-6">
+                   <input type="number" class="form-control"  placeholder="Enter question 12 score" name="question12" [(ngModel)]="udata.q12">
+                 </div>
+              </div>
+               <div class="form-group" >
+                 
+                   <div class="col-sm-6">
+                     <input type="number" class="form-control"  placeholder="Enter question 13 score" name="question13" [(ngModel)]="udata.q13">
+                   </div>
+               </div>
+               <div class="form-group" >
+                 
+                   <div class="col-sm-6">
+                     <input type="number" class="form-control"  placeholder="Enter question 14 score" name="question14" [(ngModel)]="udata.q14">
+                   </div>
+               </div>
+               <div class="form-group" >
+                 
+                   <div class="col-sm-6">
+                     <input type="number" class="form-control"  placeholder="Enter question 15 score" name="question15" [(ngModel)]="udata.q15">
+                   </div>
+               </div>           
+               <div class="form-group" >  
+                 <div class="col-sm-6">
+                   <textarea class="form-control" name="remark"  placeholder="Enter Additional remark" [(ngModel)]="udata.remark"></textarea>
+                 </div>
+                </div>
+               <div class="form-group" >  
+                  <div class="col-sm-12">
+                 <label class="control-label">Convert :</label>
+                      <label class="radio-inline"><input type="radio" name="convert" [(ngModel)]="udata.convert"value="yes">Yes</label>
+                      <label class="radio-inline"><input type="radio" name="convert" [(ngModel)]="udata.convert"value="no">No</label> 
+                  </div>
+                </div>
+               <div class="form-group">
+                 <div class="col-sm-offset-2 col-sm-8">
+                     <input type="reset" value="Reset" class="btn_">
+                   <button type="submit"  class="btn btn-primary" id="submit">Submit</button>
+                 </div>
+               </div>
+             </form>
+   </div>
+ </section>             
+   
