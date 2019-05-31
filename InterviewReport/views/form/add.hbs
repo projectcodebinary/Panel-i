@@ -1,0 +1,140 @@
+<div class="container-fuild">
+	<div class="col-sm-2" id="back">
+		
+		<h3><a class="btn btn-success" id="new" href="ir">New</a></h3>
+		<h3><a class="btn btn-warning" id="history" href="ir/list">History</a></h3>
+	</div>
+
+	<div class="col-sm-10" id="abc">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<form class="form-horizontal" action="/ir" method="POST" autocomplete="off">
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="name">Name:</label>
+						<div class="col-sm-10">          
+							<input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="email">Email:</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="cname">Company:</label>
+						<div class="col-sm-4">          
+					        <input type="text" class="form-control" id="cnamae" placeholder="Enter company name" name="companyname">
+						</div>
+						<label class="control-label col-sm-2" for="position">Position:</label>
+							<div class="col-sm-4">          
+								<input type="text" class="form-control" id="position" placeholder="Enter position" name="position">
+							</div>
+					</div>
+	
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="ques">Question 1:</label>
+						<div class="col-sm-2">          
+							<input type="text" class="form-control" id="ques1" placeholder="Enter score" name="question1">
+						</div>
+						<label class="control-label col-sm-2" for="ques">Question 2:</label>
+						<div class="col-sm-2">          
+							<input type="text" class="form-control" id="ques2" placeholder="Enter score" name="question2">
+						</div>
+						<label class="control-label col-sm-2" for="ques">Question 3:</label>
+						<div class="col-sm-2">          
+							<input type="text" class="form-control" id="ques3" placeholder="Enter score" name="question3">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="ques">Question 4:</label>
+						<div class="col-sm-2">          
+							<input type="text" class="form-control" id="ques4" placeholder="Enter score" name="question4">
+						</div>
+						<label class="control-label col-sm-2" for="ques">Question 5:</label>
+						<div class="col-sm-2">          
+							<input type="text" class="form-control" id="ques5" placeholder="Enter score" name="question5">
+						</div>
+						<label class="control-label col-sm-2" for="ques">Question 6:</label>
+						<div class="col-sm-2">          
+							<input type="text" class="form-control" id="ques6" placeholder="Enter score" name="question6">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="ques">Question 7:</label>
+						<div class="col-sm-2">          
+							<input type="text" class="form-control" id="ques7" placeholder="Enter score" name="question7">
+						</div>
+						<label class="control-label col-sm-2" for="ques">Question 8:</label>
+						<div class="col-sm-2">          
+							<input type="text" class="form-control" id="ques8" placeholder="Enter score" name="question8">
+						</div>
+						<label class="control-label col-sm-2" for="ques">Question 9:</label>
+						<div class="col-sm-2">          
+							<input type="text" class="form-control" id="ques9" placeholder="Enter score" name="question9">
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="ques">Question 10:</label>
+						<div class="col-sm-2">          
+							<input type="text" class="form-control" id="ques10" placeholder="Enter score" name="question10">
+						</div>
+						<label class="control-label col-sm-2" for="ques">Question 11:</label>
+						<div class="col-sm-2">          
+							<input type="text" class="form-control" id="ques11" placeholder="Enter score" name="question11">
+						</div>
+						<label class="control-label col-sm-2" for="ques">Question 12:</label>
+						<div class="col-sm-2">          
+							<input type="text" class="form-control" id="ques12" placeholder="Enter score" name="question12">
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="ques">Question 13:</label>
+						<div class="col-sm-2">          
+							<input type="text" class="form-control" id="ques13" placeholder="Enter score" name="question13">
+						</div>
+						<label class="control-label col-sm-2" for="ques">Question 14:</label>
+						<div class="col-sm-2">          
+							<input type="text" class="form-control" id="ques14" placeholder="Enter score" name="question14">
+						</div>
+						<label class="control-label col-sm-2" for="ques">Question 15:</label>
+						<div class="col-sm-2">          
+							<input type="text" class="form-control" id="ques15" placeholder="Enter score" name="question15">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="remark">Additional Remarks:</label>
+						<div class="col-sm-5">          
+							<textarea class="form-control" rows=3 name="remarks" ></textarea>
+						</div>
+					</div>
+				
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="convert">Convert:</label>
+						<div class="col-sm-10" >          
+							<label class="radio-inline">
+								<input type="radio" name="convert" value="Yes">Yes	
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="convert" value="No">No
+							</label>
+						</div>
+					</div>
+						
+					<div class="form-group">        
+						<div class="col-sm-offset-4 col-sm-8">
+					    	<button type="submit" class="btn btn-primary" id="submit">Submit</button>
+						</div>
+					</div>
+							
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
