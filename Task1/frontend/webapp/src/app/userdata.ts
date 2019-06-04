@@ -20,5 +20,5 @@ export class userdata
     q14:number;
     q15:number;
     remark:string;
-    convert:string;
+    convert:string="yes";
 }

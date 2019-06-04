@@ -6,7 +6,7 @@ import { DisplayComponent } from './display/display.component';
 import { AddComponent } from './add/add.component';
 import {HttpClientModule} from '@angular/common/http';
 import {UserService} from './user.service';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,

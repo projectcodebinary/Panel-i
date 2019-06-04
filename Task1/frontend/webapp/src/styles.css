@@ -59,7 +59,7 @@ header nav a:hover{
     padding: 10px;
     border: 1px solid gray;
   }
-  input[type="number"] ,input[type="text"]
+  input[type="number"] ,input[type="text"],input[type="email"],textarea
   {
     margin-bottom:10px; 
   }
@@ -81,8 +81,19 @@ header nav a:hover{
     border-color: white;
     color: white;
   }
-
-
+.is-invalid{
+  border: 1px solid red;
+}
+.invalid-feedback{
+  color: red;
+  float: left;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+p{
+  margin-left: 330px;
+  margin-top: 1px;
+}
   @media(max-width: 768px)
 {
 	header header nav,header nav li,#showcase form{
@@ -95,9 +106,17 @@ header nav a:hover{
   header li #display, header li #add{
     padding:15px;
   }
-  #display,#add, #submit ,.btn_,input[type="number"],input[type="text"]{
+  #display,#add, #submit ,.btn_,input[type="number"],input[type="text"],textarea{
 		margin-top: 10px;
     width: 100%;
-		display: block;
-	}
+    display: block;
+  }
+  .convert_
+{
+ margin-left:-130px;
+padding: 17px 0px 0px 0px;
+}
+  p{
+    margin-left: 150px;
+  }
 }
