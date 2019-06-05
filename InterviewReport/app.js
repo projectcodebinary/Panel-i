@@ -9,6 +9,7 @@ const bodyparse=require('body-parser');
 const irController=require('./controllers/irController');
 
 var app=express();
+
 app.use(bodyparse.urlencoded({
     extended:true
 }));
