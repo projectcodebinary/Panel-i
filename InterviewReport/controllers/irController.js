@@ -52,10 +52,11 @@ function insertrecord(req,res){
         if(!err){
             res.redirect('ir');
         }else{
-            console.log("Error "+err);
-        }
+                console.log("Error "+err);
+            }
     });
 }
+
 
 
 

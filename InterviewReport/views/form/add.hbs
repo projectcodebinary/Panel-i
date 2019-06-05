@@ -1,18 +1,19 @@
 <div class="container-fuild">
-	<div class="col-sm-2" id="back">
+	<div class="col-sm-2" id="left">
 		
 		<h3><a class="btn btn-success" id="new" href="ir">New</a></h3>
 		<h3><a class="btn btn-warning" id="history" href="ir/list">History</a></h3>
 	</div>
 
-	<div class="col-sm-10" id="abc">
+	<div class="col-sm-10" id="right">
 		<div class="panel panel-default">
 			<div class="panel-body">
-				<form class="form-horizontal" action="/ir" method="POST" autocomplete="off">
+				<form class="form-horizontal" action="/ir" method="POST" autocomplete="off" onsubmit="return validation()">
 					<div class="form-group">
 						<label class="control-label col-sm-2" for="name">Name:</label>
 						<div class="col-sm-10">          
-							<input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+							<input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" pattern="[A-Za-z]{1,32}" title="Number is not allowed" >
+							<span class="text-danger" id="nameError"></span>
 						</div>
 					</div>
 
@@ -20,98 +21,117 @@
 						<label class="control-label col-sm-2" for="email">Email:</label>
 						<div class="col-sm-10">
 							<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+							<span class="text-danger" id="emailError"></span>
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="control-label col-sm-2" for="cname">Company:</label>
 						<div class="col-sm-4">          
-					        <input type="text" class="form-control" id="cnamae" placeholder="Enter company name" name="companyname">
+					        <input type="text" class="form-control" id="cname" placeholder="Enter company name" name="companyname" pattern="[A-Za-z]{1,32}" title="Number is not allowed">
+							<span class="text-danger" id="cnameError"></span>
 						</div>
 						<label class="control-label col-sm-2" for="position">Position:</label>
 							<div class="col-sm-4">          
-								<input type="text" class="form-control" id="position" placeholder="Enter position" name="position">
+								<input type="text" class="form-control" id="position" placeholder="Enter position" name="position" pattern="[A-Za-z]{1,32}" title="Number is not allowed">
+								<span class="text-danger" id="positionError"></span>
 							</div>
 					</div>
 	
 					<div class="form-group">
 						<label class="control-label col-sm-2" for="ques">Question 1:</label>
 						<div class="col-sm-2">          
-							<input type="text" class="form-control" id="ques1" placeholder="Enter score" name="question1">
+							<input type="number" class="form-control" id="ques1" placeholder="Enter score" name="question1">
+							<span class="text-danger" id="ques1Error"></span>
 						</div>
 						<label class="control-label col-sm-2" for="ques">Question 2:</label>
 						<div class="col-sm-2">          
-							<input type="text" class="form-control" id="ques2" placeholder="Enter score" name="question2">
+							<input type="number" class="form-control" id="ques2" placeholder="Enter score" name="question2">
+							<span class="text-danger" id="ques2Error"></span>
 						</div>
 						<label class="control-label col-sm-2" for="ques">Question 3:</label>
 						<div class="col-sm-2">          
-							<input type="text" class="form-control" id="ques3" placeholder="Enter score" name="question3">
+							<input type="number" class="form-control" id="ques3" placeholder="Enter score" name="question3">
+							<span class="text-danger" id="ques3Error"></span>
 						</div>
 					</div>
 
 					<div class="form-group">
 						<label class="control-label col-sm-2" for="ques">Question 4:</label>
 						<div class="col-sm-2">          
-							<input type="text" class="form-control" id="ques4" placeholder="Enter score" name="question4">
+							<input type="number" class="form-control" id="ques4" placeholder="Enter score" name="question4">
+							<span class="text-danger" id="ques4Error"></span>
 						</div>
 						<label class="control-label col-sm-2" for="ques">Question 5:</label>
 						<div class="col-sm-2">          
-							<input type="text" class="form-control" id="ques5" placeholder="Enter score" name="question5">
+							<input type="number" class="form-control" id="ques5" placeholder="Enter score" name="question5">
+							<span class="text-danger" id="ques5Error"></span>
 						</div>
 						<label class="control-label col-sm-2" for="ques">Question 6:</label>
 						<div class="col-sm-2">          
-							<input type="text" class="form-control" id="ques6" placeholder="Enter score" name="question6">
+							<input type="number" class="form-control" id="ques6" placeholder="Enter score" name="question6">
+							<span class="text-danger" id="ques6Error"></span>
 						</div>
 					</div>
 
 					<div class="form-group">
 						<label class="control-label col-sm-2" for="ques">Question 7:</label>
 						<div class="col-sm-2">          
-							<input type="text" class="form-control" id="ques7" placeholder="Enter score" name="question7">
+							<input type="number" class="form-control" id="ques7" placeholder="Enter score" name="question7">
+							<span class="text-danger" id="ques7Error"></span>
 						</div>
 						<label class="control-label col-sm-2" for="ques">Question 8:</label>
 						<div class="col-sm-2">          
-							<input type="text" class="form-control" id="ques8" placeholder="Enter score" name="question8">
+							<input type="number" class="form-control" id="ques8" placeholder="Enter score" name="question8">
+							<span class="text-danger" id="ques8Error"></span>
 						</div>
 						<label class="control-label col-sm-2" for="ques">Question 9:</label>
 						<div class="col-sm-2">          
-							<input type="text" class="form-control" id="ques9" placeholder="Enter score" name="question9">
+							<input type="number" class="form-control" id="ques9" placeholder="Enter score" name="question9">
+							<span class="text-danger" id="ques9Error"></span>
 						</div>
 					</div>
 					
 					<div class="form-group">
 						<label class="control-label col-sm-2" for="ques">Question 10:</label>
 						<div class="col-sm-2">          
-							<input type="text" class="form-control" id="ques10" placeholder="Enter score" name="question10">
+							<input type="number" class="form-control" id="ques10" placeholder="Enter score" name="question10">
+							<span class="text-danger" id="ques10Error"></span>
 						</div>
 						<label class="control-label col-sm-2" for="ques">Question 11:</label>
 						<div class="col-sm-2">          
-							<input type="text" class="form-control" id="ques11" placeholder="Enter score" name="question11">
+							<input type="number" class="form-control" id="ques11" placeholder="Enter score" name="question11">
+							<span class="text-danger" id="ques11Error"></span>
 						</div>
 						<label class="control-label col-sm-2" for="ques">Question 12:</label>
 						<div class="col-sm-2">          
-							<input type="text" class="form-control" id="ques12" placeholder="Enter score" name="question12">
+							<input type="number" class="form-control" id="ques12" placeholder="Enter score" name="question12">
+							<span class="text-danger" id="ques12Error"></span>
 						</div>
 					</div>
 					
 					<div class="form-group">
 						<label class="control-label col-sm-2" for="ques">Question 13:</label>
 						<div class="col-sm-2">          
-							<input type="text" class="form-control" id="ques13" placeholder="Enter score" name="question13">
+							<input type="number" class="form-control" id="ques13" placeholder="Enter score" name="question13">
+							<span class="text-danger" id="ques13Error"></span>
 						</div>
 						<label class="control-label col-sm-2" for="ques">Question 14:</label>
 						<div class="col-sm-2">          
-							<input type="text" class="form-control" id="ques14" placeholder="Enter score" name="question14">
+							<input type="number" class="form-control" id="ques14" placeholder="Enter score" name="question14">
+							<span class="text-danger" id="ques14Error"></span>
 						</div>
 						<label class="control-label col-sm-2" for="ques">Question 15:</label>
 						<div class="col-sm-2">          
-							<input type="text" class="form-control" id="ques15" placeholder="Enter score" name="question15">
+							<input type="number" class="form-control" id="ques15" placeholder="Enter score" name="question15">
+							<span class="text-danger" id="ques15Error"></span>
 						</div>
 					</div>
 
 					<div class="form-group">
 						<label class="control-label col-sm-2" for="remark">Additional Remarks:</label>
 						<div class="col-sm-5">          
-							<textarea class="form-control" rows=3 name="remarks" ></textarea>
+							<textarea class="form-control" rows=3 name="remarks" id="remarks" ></textarea>
+							<span class="text-danger" id="remarksError"></span>
 						</div>
 					</div>
 				
@@ -119,7 +139,7 @@
 						<label class="control-label col-sm-2" for="convert">Convert:</label>
 						<div class="col-sm-10" >          
 							<label class="radio-inline">
-								<input type="radio" name="convert" value="Yes">Yes	
+								<input type="radio" name="convert" value="Yes" checked>Yes	
 							</label>
 							<label class="radio-inline">
 								<input type="radio" name="convert" value="No">No
@@ -129,7 +149,7 @@
 						
 					<div class="form-group">        
 						<div class="col-sm-offset-4 col-sm-8">
-					    	<button type="submit" class="btn btn-primary" id="submit">Submit</button>
+					    	<button type="submit" class="btn btn-primary" id="submit" >Submit</button>
 						</div>
 					</div>
 							
@@ -138,3 +158,116 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	function validation(){
+		var name=document.getElementById('name').value;
+		var email=document.getElementById('email').value;
+		var cname=document.getElementById('cname').value;
+		var position=document.getElementById('position').value;
+		var ques1=document.getElementById('ques1').value;
+		var ques2=document.getElementById('ques2').value;
+		var ques3=document.getElementById('ques3').value;
+		var ques4=document.getElementById('ques4').value;
+		var ques5=document.getElementById('ques5').value;
+		var ques6=document.getElementById('ques6').value;
+		var ques7=document.getElementById('ques7').value;
+		var ques8=document.getElementById('ques8').value;
+		var ques9=document.getElementById('ques9').value;
+		var ques10=document.getElementById('ques10').value;
+		var ques11=document.getElementById('ques11').value;
+		var ques12=document.getElementById('ques12').value;
+		var ques13=document.getElementById('ques13').value;
+		var ques14=document.getElementById('ques14').value;
+		var ques15=document.getElementById('ques15').value;
+		var remarks=document.getElementById('remarks').value;
+
+		if(name==""){
+			document.getElementById('nameError').innerHTML="**This field is required";
+			return false;
+		}
+
+		if(! isNaN(name)){
+			document.getElementById('nameError').innerHTML="user must enter character not digit";
+			return false;
+		}
+
+		if(email==""){
+			document.getElementById('emailError').innerHTML="**This field is required";
+			return false;
+		}
+		if(cname==""){
+			document.getElementById('cnameError').innerHTML="**This field is required";
+			return false;
+		}
+		if(position==""){
+			document.getElementById('positionError').innerHTML="**This field is required";
+			return false;
+		}
+		if(ques1==""){
+			document.getElementById('ques1Error').innerHTML="**This field is required";
+			return false;
+		}
+		if(ques2==""){
+			document.getElementById('ques2Error').innerHTML="**This field is required";
+			return false;
+		}
+		if(ques3==""){
+			document.getElementById('ques3Error').innerHTML="**This field is required";
+			return false;
+		}
+		if(ques4==""){
+			document.getElementById('ques4Error').innerHTML="**This field is required";
+			return false;
+		}
+		if(ques5==""){
+			document.getElementById('ques5Error').innerHTML="**This field is required";
+			return false;
+		}
+		if(ques6==""){
+			document.getElementById('ques6Error').innerHTML="**This field is required";
+			return false;
+		}
+		if(ques7==""){
+			document.getElementById('ques7Error').innerHTML="**This field is required";
+			return false;
+		}
+		if(ques8==""){
+			document.getElementById('ques8Error').innerHTML="**This field is required";
+			return false;
+		}
+		if(ques9==""){
+			document.getElementById('ques9Error').innerHTML="**This field is required";
+			return false;
+		}
+		if(ques10==""){
+			document.getElementById('ques10Error').innerHTML="**This field is required";
+			return false;
+		}
+		if(ques11==""){
+			document.getElementById('ques11Error').innerHTML="**This field is required";
+			return false;
+		}
+		if(ques12==""){
+			document.getElementById('ques12Error').innerHTML="**This field is required";
+			return false;
+		}
+		if(ques13==""){
+			document.getElementById('ques13Error').innerHTML="**This field is required";
+			return false;
+		}
+		if(ques14==""){
+			document.getElementById('ques14Error').innerHTML="**This field is required";
+			return false;
+		}
+		if(ques15==""){
+			document.getElementById('ques15Error').innerHTML="**This field is required";
+			return false;
+		}
+		if(remarks==""){
+			document.getElementById('remarksError').innerHTML="**This field is required";
+			return false;
+		}else{
+			alert("Your data is submitted.");
+		}		
+	}					 
+</script>

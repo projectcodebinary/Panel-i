@@ -3,14 +3,12 @@
 <head>
   <title>Interview Report</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <style>
       
-    #back{
-    height: 625px;
-    border-right: 1px solid rgb(53, 52, 52);
-    position: relative;
+    #left{   
+    position: relative;   
     }
 #new{
     border-radius: 20px;
@@ -22,13 +20,23 @@
     width:150px;
     margin:30px 50px 0px 30px ;
 }
-#abc{
-    position: absolute;
-    top:20px;
+#right{
+    position: absolute;  
     right:0px;
+    border-left: 1px solid rgb(53, 52, 52);
+}
+ #list{   
+    position: relative; 
+    height: 625px;
+    border-right: 1px solid rgb(53, 52, 52);  
+    }
+#table{
+    position: absolute;  
+    right:0px;
+    top:20px;
 }
 .panel{
-    margin: 0px;
+    margin: 10px;
 }
 
 #submit{
@@ -36,9 +44,82 @@
     width:180px;			
 }
 
+@media screen and (max-width:1365px){
+    .container-fuild{
+        width: 100%;
+    }
+    #left, #list{
+        width: 20%;
+    }
+    #right, #table{
+        width: 80%;
+    }
+}
+@media screen and (max-width:1024px){
+    .container-fuild{
+        width: 100%;
+    }
+    #left, #list{
+        width: 22%;
+    }
+    #right, #table{
+        width: 78%;
+    }
+}
+@media screen and (max-width:768px){
+    .container-fuild{
+        width: 100%;
+    }
+    #left, #list{
+        width: 30%;
+        
+    }
+    #right, #table{
+        width: 70%;
+    }
+}
 
+@media screen and (max-width:425px){
+   
+    #left{
+        width: 100%;
+        
+    }
+    #right{
+        width: 100%;      
+        border-left: 0px;
+        border-top: 1px solid rgb(53, 52, 52);
+    }
+    #list{
+        width: 100%;
+        height: 0%;
+        border-right: 0px;
+        border-bottom: 1px solid rgb(53, 52, 52);
+    }
+   #table{
+        width: 100%;      
+        top:160px;      
+   }
+    #new{
+        border-radius: 20px;
+        width:150px;
+        margin:20px 0px 0px 20px ;
+        
+    } 
+    #history{
+        border-radius: 20px;
+        width:150px;
+        margin:0px 0px 0px 20px ;       
+    }
+    
+    #submit{
+    border-radius: 20px;
+    width:100%;			
+    }
+}
 
-  </style>
+ </style>
+  
 </head>
 <body>
 

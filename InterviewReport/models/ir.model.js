@@ -2,7 +2,7 @@ const mongoose=require('mongoose');
 
 var irSchema=new mongoose.Schema({
     name:{
-        type:String
+        type:String,
     },
     email:{
         type:String
