@@ -1,18 +1,18 @@
-<div class="container-fuild">
+
 	<div class="col-sm-2" id="left">
 		
-		<h3><a class="btn btn-success" id="new" href="ir">New</a></h3>
-		<h3><a class="btn btn-warning" id="history" href="ir/list">History</a></h3>
+		<h3> <a class="btn btn-success" id="new" href="/ir">New</a></h3>
+		<h3> <a class="btn btn-warning" id="history" href="ir/list">History</a></h3>
 	</div>
 
 	<div class="col-sm-10" id="right">
 		<div class="panel panel-default">
 			<div class="panel-body">
-				<form class="form-horizontal" action="ir\pdf" method="POST" autocomplete="off" onsubmit="return validation()">
+				<form class="form-horizontal" action="ir/pdf" method="POST" autocomplete="on" onsubmit="return validation()">
 					<div class="form-group">
 						<label class="control-label col-sm-2" for="name">Name:</label>
 						<div class="col-sm-10">          
-							<input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" pattern="[A-Za-z]{1,32}" title="Number is not allowed" >
+							<input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" pattern="[A-Za-z\s]{1,32}" title="Number is not allowed" >
 							<span class="text-danger" id="nameError"></span>
 						</div>
 					</div>
@@ -36,7 +36,7 @@
 						</div>
 						<label class="control-label col-sm-2" for="position">Position:</label>
 							<div class="col-sm-4">          
-								<input type="text" class="form-control" id="position" placeholder="Enter position" name="position" pattern="[A-Za-z]{1,32}" title="Number is not allowed">
+								<input type="text" class="form-control" id="position" placeholder="Enter position" name="position" pattern="[A-Za-z\s]{1,32}" title="Number is not allowed">
 								<span class="text-danger" id="positionError"></span>
 							</div>
 					</div>
