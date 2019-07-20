@@ -78,7 +78,7 @@ router.post('/pdf',(req,res)=>{
 }
 
 
-    var doc={
+    var docment={
         content:[
             {columns:[
                 {
@@ -201,7 +201,7 @@ router.post('/pdf',(req,res)=>{
 
             // Code for create pdf and download
 
-            const pdfDoc=pdfMake.createPdf(doc);
+            const pdfDoc=pdfMake.createPdf(docment);
             pdfDoc.getBase64((data)=>{
                 res.setHeader('Content-Type','application/pdf');
                 res.writeHead('200',{'Content-Disposition':'attachment;filename="interviewreport.pdf"'});
