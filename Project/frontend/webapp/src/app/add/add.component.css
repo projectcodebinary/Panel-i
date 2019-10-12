@@ -1,0 +1,53 @@
+
+.success {
+    -webkit-animation: seconds 1.0s forwards;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-delay: 1s;
+    animation: seconds 1.0s forwards;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+    position: relative;
+      
+  }
+  @-webkit-keyframes seconds {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      left: -9999px; 
+      position: absolute;   
+    }
+  }
+  @keyframes seconds {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      left: -9999px;
+      position: absolute;     
+    }
+  }
+  @media(max-width: 768px)
+  {
+    .content
+    {
+      overflow: auto;
+    }
+  .content #name,#email,#company,#remark,#convert{
+   margin-left: 0px;
+  }
+  #report{
+    text-align: center; 
+  }
+  #logo{
+   
+  }
+  }
+
+   #content { display:none;}
+@media print {
+  
+  #content {display:block;}
+}  
