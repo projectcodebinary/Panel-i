@@ -24,7 +24,7 @@
     "angular-alert-module": "^2.0.3",
     "core-js": "^2.5.4",
     "html2canvas": "^1.0.0-rc.3",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jspdf": "^1.4.1",
     "mdbootstrap": "^4.8.2",
     "ng2-bootstrap": "^1.6.3",
